@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .element {
+  width: 200px;
+  height: 200px;
+  border: thick solid;
+  border-top-color: red;
+  border-left-color: blue;
+  border-right-color: green;
+  border-bottom-color: gold;
+}
+
+.demo {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.top,
+.bottom {
+  grid-column: 1/4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="top" aria-label="Top color: red"><code>border-color: red</code></div>
+        <div class="left" aria-label="Left color: blue"><code>border-color: blue</code></div>
+        <div class="element"></div>
+        <div class="right" aria-label="Right color: green"><code>border-color: green</code></div>
+        <div class="bottom" aria-label="Bottom color: gold"><code>border-color: gold</code></div>
+      </div>
+</body>
+</html>
